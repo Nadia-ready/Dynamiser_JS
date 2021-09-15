@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="desciption" content="Jeu de dés">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nadia EPIVENT">
+    <title>Jeu de dés</title>
+
+    <link rel="stylesheet"  href="/style.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <ion-grid>
+        <ion-row class="ion-float-sm-2">
+            <ion-col>
+                <ion-button 
+                    id="newGame";
+                    size="large";
+                    color="primary";
+                    > New Game
+                    <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-float-sm-2">
+            <ion-col>
+                <h2 class="playerName" id="firstPlayer">Joueur 1</h2>
+            </ion-col>
+            <ion-col>
+                <img id="dice" src="/images/dice-1.png">
+            </ion-col>
+            <ion-col>
+                <h2 class="playerName" id="secondPlayer">Joueur 2</h2>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-float-sm-2">
+            <ion-col class="total">
+                <p>TOTAL SCORE</p>
+                <h3 class="score" id="globalFirstPlayer">0</h3>
+            </ion-col>
+            <ion-col>
+                <ion-button 
+                    id="roll";
+                    size="large";
+                    color="primary";
+                    > Roll Dice
+                    <ion-icon slot="start" name="reload-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col class="total">
+                <p>TOTAL SCORE</p>
+                <h3 class="score" id="globalSecondPlayer">0</h3>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-float-sm-2">
+            <ion-col class="total">
+                <p>ROUND</p>
+                <h4 class="score" id="roundFirstPlayer">0</h4>
+            </ion-col>
+            <ion-col>
+                <ion-button
+                    id="hold";
+                    size="large";
+                    color="primary";
+                    > Hold
+                    <ion-icon slot="start" name="reload-outline"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col class="total">
+                <p>ROUND</p>
+                <h4 class="score" id="roundSecondPlayer">0</h4>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+    <script src="app.js"></script>
+</body>
+</html>

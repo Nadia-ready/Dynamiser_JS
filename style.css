@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+body{
+    color:black;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* Ajustement du bouton*/
+.btn{
+    vertical-align: middle;
+	cursor:pointer;
+    height: 4rem;
+    text-align: center;
+}
+
+/*Taille des dés*/
+#dice{
+    height: 15rem;
+    border-radius:12px;
+    border:4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Style playerName*/
+.playerName {
+    border-radius: 12px;
+    background-color:#3880ff;
+    color: white;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/*style total*/
+
+.total{
+    border-radius: 12px;
+    background-color:#94bbfd;
+    color: white;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.score{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/*style bouton*/
+ion-button{
+    background-color: black;
+    font-size: 1.5rem;
+}
